@@ -29,6 +29,6 @@ python onboard_advanced.py --fix      # auto-install missing packages
 
 ## Code Quality
 
-- ✅ Black formatted
-- ✅ Pylint score ≥ 8/10
-- ✅ All functions have docstrings
+- Black formatted
+- Pylint score ≥ 8/10
+- All functions have docstrings
