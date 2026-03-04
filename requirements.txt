@@ -1,0 +1,4 @@
+black==24.1.1
+numpy==1.26.4
+pylint==3.0.3
+requests==2.31.0
