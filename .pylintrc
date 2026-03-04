@@ -1,0 +1,38 @@
+# .pylintrc — Beginner-friendly config for AI/ML Python projects
+# Generated with AI assistance and manually reviewed
+
+[MASTER]
+# Use 1 job for simplicity
+jobs=1
+
+[MESSAGES CONTROL]
+# Disable rules that are too strict or confusing for beginners
+disable=
+    C0114,  # missing-module-docstring (relaxed for short scripts)
+    R0903,  # too-few-public-methods (common in ML data classes)
+    W0212,  # protected-access (sometimes needed in ML frameworks)
+    C0103,  # invalid-name (allows short names like X, y used in ML)
+    R0801   # duplicate-code (relaxed for learning exercises)
+
+[FORMAT]
+# Match Black's default line length
+max-line-length=88
+
+# Allow short variable names common in maths and ML
+good-names=i,j,k,x,y,n,df,lr,X,_
+
+[DESIGN]
+# Relaxed limits suitable for ML/AI scripts
+max-args=8
+max-locals=20
+max-returns=6
+max-branches=15
+max-statements=60
+
+[SIMILARITIES]
+# Minimum lines of code before flagging as duplicate
+min-similarity-lines=10
+
+[REPORTS]
+# Always show the Pylint score at the end
+score=yes
